@@ -14,9 +14,18 @@ const cores = ["#fde68a", "#bfdbfe", "#bbf7d0", "#fbcfe8"];
 botaoCriar.addEventListener("click", () => {
     const i = Math.floor(Math.random() * frases.lenght);
     retorno.textContent = frases[i];
-    retorno.style.backgroundColor + cores[i];
+    retorno.style.backgroundColor = cores[i];
     retorno.style.fontSize = "24px";
     retorno.style.padding = "15px";
     retorno.style.borderRadius = "10px";
     retorno.style.textAlign = "center";
 });
+
+botaoApagar.addEventListener("click", () => {
+     const i = Math.floor(Math.random() * frases.lenght);
+    retorno.style.backgroundColor = cores;
+    retorno.style.fontSize = "";
+    retorno.style.padding = "";
+    retorno.style.borderRadius = "";
+    retorno.style.textAlign = "";
+ }
